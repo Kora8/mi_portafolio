@@ -1,0 +1,713 @@
+:root{
+    --clr-azul-solid: #4494DD;
+    --clr-linear-gradiant-azul: #00F0FF;
+    --clr-linear-gradiant-rosa: #A108BA;
+  }
+
+/*PRIMERA PARTE: SOBRE MI*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.container {
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.contenedor_imagenPrincipal {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    transform: rotate(360deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_principal_mia {
+    width: 100%;
+    height: 100%;
+    background-image: url('./image/CHRIS\ HEMSWORTH\ 2021\ _\ Jasin\ Boland\ ph_\ behind\ the\ scenes\ of\ “Extraction\ 2”.jpg');
+    background-size: cover;
+    background-position: bottom;
+    clip-path: ellipse(50% 100% at 50% 120%);
+}
+
+.contenedor_sobreMi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.mi_nombre {
+    width: 100%;
+    color: #3489db;
+    margin: 0 0 20px 0;
+}
+
+.sobreMi {
+    margin: 20px 0;
+    max-width: 90%; 
+    text-align: center; 
+}
+
+.button_cv, #enviar_form {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3489db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button_cv:hover {
+    background-color: #2c7bbf;
+}
+
+/*Estilos segunda página*/
+
+.trayectoria_titulo{
+    margin: 55px 0 20px 0;
+    text-align: center;
+    color: white;
+}
+.titulo_tarjeta_trayectoria{
+    margin: 22px 0 0 20px;
+    color: #7593df;
+    text-align: center;
+}
+
+.contenedor_trayectoria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 15px;
+    padding: 15px;
+}
+
+.tarjeta_trayectoria{
+    background: #47494a41;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 1px #666666;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.tarjeta_trayectoria::after{
+    display: block;
+    position: absolute; 
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    content: '';
+    width: 2px;
+    height: 100px;
+    background: linear-gradient(#00F0FF,#A108BA);
+  }
+  .tarjeta_trayectoria:hover::before{
+    display: block;
+    content: '';
+    width: 180px;
+    height: 110%;
+    background: #55555538;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 2px 50px 10px #55555570;
+}
+.tarjeta_trayectoria:hover::after{
+    transition: all .3s ease-in-out;
+    display: block;
+    position: absolute; 
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    content: '';
+    width: 4px;
+    height: 100px;
+    background: linear-gradient(#00F0FF,#A108BA); 
+}
+.tarjeta_trayectoria:hover .titulo_tarjeta_trayectoria{
+    transition: all 300ms ease-in-out;
+    margin: 22px 0 0 25px;
+}
+.tarjeta_trayectoria:hover .descripcion_trayectoria{
+    transition: all 300ms ease-in-out;
+    margin-left: 25px;
+}
+
+
+.descripcion_trayectoria{
+    width: 90%;
+    margin-left: 20px;
+}
+
+.ultima_tarjeta_trayectoria{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+/*Tercera página*/
+.circulo_gris {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 0 20px 20px 0;
+    background: rgba(101, 101, 101, 0.364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo_habiidadesBlandas {
+    text-align: justify;
+}
+
+.imagen_habilidadesBlandas{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: url(../image/Habilidades\ blandas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#titulo_habilidadesBlandas{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(127, 174, 255);
+}
+
+
+.habilidad{
+    color: rgb(127, 174, 255);
+}
+
+
+/*Cuarta Pagina*/
+  /* --- PROYECTOS --- */
+  .contenedorHolograma {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  
+  
+  #tituloProyecto {
+    z-index: 22;
+    padding: 12px;
+  }
+  
+  .proyecto {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .contenedor-img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .front{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contenedorPersonaje {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .cardContenedor {
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .cardContenedor:hover .front {
+    display: none;
+  }
+  
+  .cardContenedor:hover .back {
+    display: flex;
+  }
+  
+  .back {
+    z-index: 3003;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: #56565641;
+    border-radius: 10px;
+  }
+  
+  .contenedorTecnologias{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .barraDeLuz {
+    display: block;
+    width: 3px;
+    height: 90px;
+    background: linear-gradient(rgb(41, 62, 214), rgb(188, 17, 185));
+    margin-right: 10px;
+  }
+  
+  .proyecto_proposito{
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .titulos_tarjeta_back{
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .tecnologia_img{
+    margin-top: 10px;
+    width: 32px;
+  }
+  
+  .back a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contenedor_Descripcion {
+    display: flex;
+  }
+  
+  .Enlace_back {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Enlace_back a {
+    margin-top: 10px;
+  }
+  
+  #animacion-personaje {
+    width: 200px;
+    height: 200px;
+    background-image: url('image/secuencia/secuencia\ completa\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    z-index: 500;
+  }
+  
+  .animar {
+    animation: slide .3s steps(2) 1 forwards;
+  }
+  
+  .alinearElementos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  @keyframes slide {
+    0% {
+      background-position: 0px 0;
+    }
+  
+    100% {
+      background-position: -400px 0;
+    }
+  }
+  
+  .animar-reverse {
+    animation: slide-reverse .3s steps(2) 1 forwards;
+  }
+  
+  @keyframes slide-reverse {
+    0% {
+      background-position: -400px 0;
+    }
+  
+    100% {
+      background-position: 0px 0;
+    }
+  }
+  
+  
+
+/*Quinta Pagina*/
+.contenedorPadre{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0 15px;
+    margin: 40px 0;
+}
+
+.info_contenedor{
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(39, 91, 223);
+    box-shadow: 0 0 9px 0px rgb(39, 91, 223);
+    text-align: center;
+    padding: 10px;
+}
+
+.info_contenedor h1{
+    margin: 20px 0;
+    color: rgb(39, 91, 223);
+}
+
+.contenedor_carrusel{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border-radius: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.contenedorContenido{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    /* background-color: rgb(60, 176, 124); */
+    gap: 80px;
+    place-content: center;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transition: transform 2s ease;
+    z-index: 222;
+}
+
+.delimitador_imagen{
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-direction: column;
+}
+
+.delimitador_imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#filosofia{
+        color: white;
+        font-size: 18px;
+        transform: rotate(90deg);
+    }
+
+.dos{
+    transform: rotate(-270deg);
+}
+
+.tres{
+    transform: rotate(-90deg);
+}
+
+.cuatro{
+    transform: rotate(-180deg);
+}
+
+#botones{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .radio{
+    display: flex;
+    gap: 0 5px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input[type="radio"]{
+  cursor: pointer;
+}
+
+.informacion_carrusel{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#habilidad{
+    position: absolute;
+    bottom: 15px;
+    margin: 0 auto;
+    z-index: 2;
+    color: white;
+    font-size: 20px;
+}
+
+hr{
+  margin: 0 auto;
+  width: 80%;
+  border: none;
+  height: 2px;
+  background: #666666;
+}
+
+textarea{
+  resize: vertical;
+}
+
+#enviar_form{
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+
+/*Página final*/
+#titulo_mail_contenedor{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin: 5px 0 25px 0;
+}
+
+#formulario_mail_contenedor{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+#formulario_contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 15px;
+}
+
+#image_contenedor{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-top: 50px;
+}
+
+.contenedor_inputs_form{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .contenedor_inputs_form input, #mensaje{
+    min-height: 30px;
+    background: #131313;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px grey;
+    padding: 10px 5px;
+
+  }
+  .contenedor_inputs_form input:focus, #mensaje:focus{
+    box-shadow: 0 0 0 2px #2c7bbf;
+  }
+
+  #mensaje{
+    padding: 10px 5px;
+    resize: vertical;
+  }
+
+.nombre, .mensaje{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.image_contact{
+  max-width: 300px;
+    width: 100%;
+}
+
+#redes{
+    display: flex;
+    justify-content: space-around;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding-top: 20px;
+}
+
+.red_social{
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+
+/* MEDIA QUERIES*/
+/*Media queries de la página 1*/
+@media (max-width: 414px) { 
+    .contenedor_imagenPrincipal{
+        height: 250px;
+    }
+}
+@media (max-width: 600px) {
+    .sobreMi {
+        max-width: 100%; 
+        padding: 0 10px; 
+    }
+}
+
+/*Media queries de la página 2*/
+@media (max-width: 700px) { 
+    .contenedor_trayectoria{
+        grid-template-columns: 1fr;
+    }
+ }
+ 
+ @media (max-width: 560px) { 
+    .tarjeta_trayectoria{
+           height: 150px;
+           /* display: flex; */
+           justify-content: center;
+           flex-direction: column;
+    }
+
+    .ultima_tarjeta_trayectoria{
+        height: auto !important;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width:568px){
+    #formulario_mail_contenedor{
+        grid-template-columns: 1fr;
+    }
+    #image_contenedor{
+        grid-row-start: 1;
+        height: auto;
+    }
+    .image_contact{
+        width: 150px;
+    }
+    #formulario_contenedor{
+        gap: 20px 5px;
+    }
+}
+
+  /* Medi queries de la pagina 3 */
+  @media (width <= 577px) {
+      #primeraHabilidad{
+          margin-top: 0;
+      }
+      .circulo_gris {
+          float: none;
+          shape-outside: none;
+          margin: 0 auto;
+      }
+       #primeraHabilidad{
+          margin-top: 15px;
+      }
+      h1{
+          margin: 15px;
+      }
+    }
+
+  @media (width >= 578px) {
+      #primeraHabilidad{
+          margin-top: 0;
+        }
+  }
+
+  /*Media queries de la página 4*/
+  
+  @media (max-width: 414px) { 
+    .alinearElementos{
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 575.98px) { 
+    .alinearElementos{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: start;
+    }
+   }
+  
+   /*Media queries de la página 5*/
+   @media (max-width: 576px) and (max-width: 767.98px) {
+    .contenedorPadre {
+        flex-direction: column-reverse;
+    }
+    .contenedor_carrusel{
+        width: 300px;
+        height: 300px;
+    }
+    .delimitador_imagen{
+        width: 235px;
+        height: 235px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        flex-direction: column;
+    }
+    #habilidad{
+        bottom: 0px;
+        font-size: 18px;
+    }
+    .info_contenedor{
+        height: 90%;
+        width: 100%;
+    }
+}
