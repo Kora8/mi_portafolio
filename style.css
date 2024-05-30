@@ -682,6 +682,10 @@ textarea{
       justify-content: space-evenly;
       align-items: start;
     }
+       .info_contenedor{
+        min-width: 90vw;
+        /*Si esto rompe el diseño de la sección donde hablo más sobre mí (con las imagenes redondas), quitalo y ya veremos qué hacer*/
+    }
    }
   
    /*Media queries de la página 5*/
@@ -689,6 +693,7 @@ textarea{
     .contenedorPadre {
         flex-direction: column-reverse;
     }
+    
     .contenedor_carrusel{
         width: 300px;
         height: 300px;
